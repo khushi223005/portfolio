@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style/swiper.css" />
+    <title>Khushi Shahu</title>
+    <style type="text/tailwindcss">
+        @layer utilities {
+        .nav-items {
+          @apply cursor-pointer;
+        }
+      }
+    </style>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<body class="bg-[var(--bg-primary)] text-[var(--color-primary)]">
+    <!-- NAV section -->
+    <div aria-label="menu"
+        class="z-30 grid transition grid-cols-3 md:hidden fixed translate-y-52 bottom-0 bg-[var(--bg-container-primary)] w-full items-center justify-center border-t border-t-[var(--border-secondary)] text-[var(--color-primary) text-sm">
+        <a href="#home" class="menu-link flex flex-col items-center justify-center py-4">
+            <i class="uil uil-estate"></i>
+            Home
+        </a>
+        <a href="#aboutMe" class="menu-link flex flex-col items-center justify-center py-4">
+            <i class="uil uil-notes"></i>About
+        </a>
+
+        <a href="#contact" class="menu-link flex flex-col items-center justify-center py-4">
+            <i class="uil uil-at"></i>Contact
+        </a>
+        
+    </div>
+
+    <nav
+        class="flex sticky px-2 relative -top-1 z-10 drop-shadow-lg justify-between items-center h-12 w-full bg-[var(--bg-secondary)] text-[var(--color-secondary)] border-b border-b-[var(--border-secondary)]">
+        <div class="container mx-auto flex justify-between">
+            <!--<div class=""><img src="Logo" class="h-6 w-6"></div>--->
+            <ul class="hidden md:flex gap-8 text-xs text-[var(--color-secondary)] nav-links">
+                <a href="#home">
+                    <li class="nav-items active-nav-link">Home</li>
+                </a>
+                <a href="#aboutMe">
+                    <li class="nav-items">About</li>
+                </a>
+
+                <a href="#contact">
+                    <li class="nav-items">Contact</li>
+                </a>
+            </ul>
+            <i class="block md:hidden uil uil-bars pr-2 open-menu"></i>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section id="home"
+        class="h-96 flex flex-col gap-4 items-center justify-center bg-[var(--bg-secondary)] text-[var(--color-secondary)]">
+        <img src="./khushiProfile.jpg" class="profile rounded-full bg-[var(--effect-color)]" />
+        <h2 class="text-2xl font-medium text-center w-60 ">
+            Khushi Shahu
+            <div class="text-xs font-thin">
+                I am a BCA student passionate about web development, eager to learn and grow in the world of technology. With a strong foundation in front-end and back-end development, I'm excited to contribute my skills and enthusiasm to create innovative web solutions.
+            </div>
+        </h2>
+        <div class="flex gap-4">
+            <a href="https://github.com/khushi223005">
+                <i class="uil uil-github-alt cursor-pointer"></i></a>
+            <a href="https://listwr.com/q98DG9">
+                <i class="uil uil-linkedin-alt cursor-pointer"></i></a>
+        </div>
+        
+        <button class="text-sm rounded-full py-2 px-4 bg-[var(--red)]">
+            <a href="Utkarsh Resume.pdf">Resume</a>
+        </button>
+    </section>
+
+    <!-- Container -->
+    <div class="flex flex-col container mx-auto p-4">
+        <!-- About me -->
+        <section class="flex flex-col gap-6 pt-16" id="aboutMe">
+            <h2 class="text-xl font-bold text-center animate__animated animate__bounce">About Me</h2>
+            <div class="flex gap-6">
+                
+                <div
+                    class="grid grid-cols-1 md:grid-cols-3 shadow-lg bg-[var(--bg-container-primary)] rounded-lg text-[var(--color-info)] text-xs gap-6 p-6">
+                    <div class="flex flex-1 col-span-1 justify-between flex-col">
+                        <div>
+                            I am a BCA student with a passion for web development and a strong desire to learn and grow in the tech industry. I have hands-on experience with modern web technologies and frameworks through my academic projects and internships, and I'm always eager to take on new challenges. My goal is to contribute to meaningful projects while continuously improving my skills and knowledge in software development.
+                        </div>
+                         <div class="flex items-center mt-4">
+                            <a href="Utkarsh Resume.pdf" download="Utkarsh Resume.pdf">
+                                <button class="rounded-full text-white py-2 px-4 bg-[var(--red)]">
+                                    Download Resume
+                                </button>
+                            </a>
+                        </div> 
+                    </div>
+
+                    <div class="flex flex-1 col-span-2">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 w-full">
+                            <div class="flex flex-col justify-start mb-2 gap-2">
+                                <div class="flex justify-between">
+                                    <div>React.js</div>
+                                    <div>20%</div>
+                                </div>
+                                <div class="bg-gray-300 h-2 rounded-full">
+                                    <div
+                                        class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% h-full rounded-full w-[20%]">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-start mb-2 gap-2">
+                                <div class="flex justify-between">
+                                    <div>Python</div>
+                                    <div>20%</div>
+                                </div>
+                                <div class="bg-gray-300 h-2 rounded-full">
+                                    <div class="bg-[var(--purple)] h-full rounded-full w-[20%]"></div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-start mb-2 gap-2">
+                                <div class="flex justify-between">
+                                    <div>DATABASE- (MYSQL)</div>
+                                    <div>20%</div>
+                                </div>
+                                <div class="bg-gray-300 h-2 rounded-full">
+                                    <div class="bg-[var(--green)] h-full rounded-full w-[20%]"></div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-start mb-2 gap-2">
+                                <div class="flex justify-between">
+                                    <div>FRONTEND-(HTML CSS BOOTSTRAP JAVASCRIPT)</div>
+                                    <div>20%</div>
+                                </div>
+                                <div class="bg-gray-300 h-2 rounded-full">
+                                    <div class="bg-[var(--dark-blue)] h-full rounded-full w-[20%]"></div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-start mb-2 gap-2">
+                                <div class="flex justify-between">
+                                    <div>Git</div>
+                                    <div>20%</div>
+                                </div>
+                                <div class="bg-gray-300 h-2 rounded-full">
+                                    <div class="bg-[var(--orange)] h-full rounded-full w-[20%]"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- Recent Works -->
+       <!-- <section class="pt-16" id="works">
+            <h2 class="text-xl font-bold text-center animate__animated animate__bounce">Recent Works</h2>
+            <h3 class="text-xl text-[var(--color-info)]">
+                Be the first one to be featured here
+            </h3>
+             <div class="flex mt-6 gap-4 text-[var(--color-primary)]">
+                <div class="grid w-full grid-cols-4 gap-4">
+                    <div class="bg-gray-200 p-4 rounded-md shadow">Column 1</div>
+                    <div class="bg-gray-200 p-4 rounded-md shadow">Column 2</div>
+                    <div class="bg-gray-200 p-4 rounded-md shadow">Column 3</div>
+                    <div class="bg-gray-200 p-4 rounded-md shadow">Column 4</div>
+                    <div class="bg-gray-200 p-4 rounded-md shadow">Column 5</div>
+                    <div class="bg-gray-200 p-4 rounded-md shadow">Column 6</div>
+                </div>
+            </div> 
+        </section> -->
+
+
+        
+        
+
+ 
+
+        <!-- Get in touch -->
+        <section class="pt-16" id="contact">
+            <h2 class="text-xl text-center font-bold">Get in touch</h2>
+            <h3 class="text-sm text-[var(--color-info)] text-center">
+                I'm excited to start my professional journey as a BCA student and would love to connect with you!
+            </h3>
+            <div class="flex justify-center mt-6 gap-4 text-[var(--color-primary)]">
+                <form id="contactForm" class="flex max-w-[768px] container gap-4 flex-col">
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <input type="text" name="name" id="name" placeholder="Your name" required
+                            class="rounded-full shadow-lg flex-1 w-full md:w-64 p-4 text-sm" />
+                        <input type="email" name="email" id="email" placeholder="Your email" required
+                            class="rounded-full shadow-lg flex-1  w-full md:w-64 p-4 text-sm" />
+                    </div>
+                    <input type="text" name="subject" id="subject" placeholder="Subject" required class="rounded-full shadow-lg w-full p-4 text-sm" />
+                    <div>
+                        <textarea name="message" id="message" placeholder="Message" required
+                            class="rounded-full shadow-lg w-full w-64 p-4 text-sm"></textarea>
+                    </div>
+                    <button type="submit" id="submitBtn" class="text-[var(--color-secondary)] bg-[var(--red)] rounded-full p-4">
+                        <span id="submitText">Submit</span>
+                        <span id="loadingText" style="display: none;">Sending...</span>
+                    </button>
+                </form>
+                <!-- Toast Container -->
+                <div id="toastContainer" class="fixed top-4 right-4 z-50" style="display: none;">
+                    <div id="toast" class="bg-white border-l-4 border-green-500 shadow-lg rounded-lg p-4 max-w-sm">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <i id="toastIcon" class="uil uil-check-circle text-green-500 text-xl"></i>
+                            </div>
+                            <div class="ml-3">
+                                <p id="toastMessage" class="text-sm font-medium text-gray-900">
+                                    Thank you! Your message has been sent successfully.
+                                </p>
+                            </div>
+                            <div class="ml-auto pl-3">
+                                <button id="toastClose" class="text-gray-400 hover:text-gray-600">
+                                    <i class="uil uil-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+    </div>
+    <section class="flex items-center mt-8 justify-center p-4 bg-[var(--bg-secondary)] text-[var(--color-secondary)]">
+        Thank you for visiting my portfolio!
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="./script/script.js" defer></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+    </script>
+</body>
+
+</html> 
